@@ -1,0 +1,138 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    width: 1440px;
+}
+
+.container{
+    width: 84%;
+    margin:0 auto;
+}
+
+header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 2px 2px 2px #797;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header-logo a{
+    font-size: 27px;
+    color:#292F36;
+    text-transform: lowercase;
+    margin-bottom: 2px !important;
+}
+
+.header a{
+    text-decoration: none;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.nav-item{
+    list-style: none;
+}
+.nav-item:not(:last-child){
+    margin-right:40px;
+}
+
+.nav-item a{
+    font-size: 19px;
+    font-weight: 400;
+    color:#292F36;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    transition: all 0.5s;
+}
+
+.nav-item a:hover{
+    color: #CDA274 !important;
+}
+
+.active a{
+    color: #CDA274 !important;
+    font-size: 20px !important;
+}
+/* responsive menu */
+.menu{
+    display: none;
+}
+.menu-img{
+    position: relative;
+    right: 0;
+}
+
+.menu-img:hover{
+    cursor: pointer;
+}
+
+.menu-img p{
+    transform: rotate(90deg);
+    letter-spacing: 2px;
+}
+
+.menu-none{
+    display: none;
+}
+
+.menu-items{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    background-color: #dad8d2;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Joke', sans-serif;
+    transition: all 0.7s !important;
+    font-size: 20px;
+    
+}
+
+
+.menu-item{
+    text-align: center;
+    margin: 25px;
+    list-style: none;
+}
+
+.menu-item a{
+    color: #292F36 ;
+}
+
+.menu-item:first-child{
+    margin-top:20%;
+}
+
+@media only screen and (max-width:900px) {
+    .nav-item:not(:last-child){
+        margin-right: 20px;
+    }
+    .nav-item a{
+        font-size: 17px;
+    }
+
+    .active{
+        font-size: 18px !important;
+    }
+
+}
+
+@media only screen and (max-width:666px){
+    .header-nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
