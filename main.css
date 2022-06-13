@@ -160,6 +160,7 @@ button{
     border-radius: 18px;
     background-color: #292F36;
     color: #fff;
+    transition: all;
 }
 
 .button p{
@@ -176,6 +177,87 @@ button img{
     padding-right: 17px;
 }
 
+button:hover{
+    background-color: #d2cec3;
+    cursor: pointer;
+}
+
+/* services section */
+.services{
+    position:absolute ;
+    top:1000px
+}
+
+.services-items{
+    display: flex;
+    justify-content: center;
+}
+
+.services-item{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+/* .services-item:first-child{
+    margin-right: 100px;
+}
+
+.services-item:last-child{
+    margin-left: 100px;
+} */
+
+
+.services-item h3{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    color: #292F36;
+    font-size: 25px;
+    line-height: 39px;
+    letter-spacing: 0.22px;
+    
+}
+
+.services-item p{
+    font-family: 'Jost', sans-serif ;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: .22px;
+    color: #4D5053;
+    margin: 0;
+}
+
+
+
+.services-item a{
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+    font-family: 'Jost',sans-serif;
+    padding: 0;
+    color: #292F36;
+    text-decoration: none;
+}
+
+.services-item a i{
+    padding-left: 5px;
+    color: gold;
+}
+
+
+@media only screen and (max-width: 996px) {
+    .services-item h3{
+        font-size: 22px;
+        line-height: 30px;
+
+    }
+
+    .services-item p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
 
 
 @media only screen and (max-width:900px) {
@@ -194,6 +276,19 @@ button img{
         font-size: 18px !important;
     }
 
+}
+
+@media only screen and (max-width: 805px) {
+    .services-item h3{
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+
+    .services-item p{
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (max-width:666px){
@@ -226,6 +321,25 @@ button img{
     .button p{
         font-size: 14px;
     }
+
+    .services-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-item{
+        width: 50%;
+    }
+    .services-item h3{
+        font-size: 25px;
+        line-height: 39px;
+        
+    }
+    
+    .services-item p{
+        font-size: 22px;
+        line-height: 33px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -253,4 +367,7 @@ button img{
         line-height: 20px;
     }
 
+    .services-item{
+        width: 80%;
+    }
 }
