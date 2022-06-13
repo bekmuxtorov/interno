@@ -151,30 +151,20 @@ header{
     letter-spacing: .22px;
     color: #4D5053;
     font-weight: 400;
-
+    
 }
 button{
-    display:flex;
-    align-items: center;
     border: 2px solid #292F36;
     border-radius: 18px;
     background-color: #292F36;
     color: #fff;
-    transition: all;
-}
-
-.button p{
+    transition: all 0.5s;
     font-family: "Jost", sans-serif;
     font-weight: 400;
     letter-spacing: .72px;
     font-size: 18px;
     line-height: 27px;
     padding-left: 34px;
-}
-
-button img{
-    padding-left: 20px;
-    padding-right: 17px;
 }
 
 button:hover{
@@ -245,14 +235,121 @@ button:hover{
     color: gold;
 }
 
+/* skill-section */
+.skill{
+    position: absolute;
+    top: 1300px;
+    right: 0;
+    left: 0;
+}
+
+
+.skill-items{
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+.skill-img{
+    margin-left: 30px;
+}
+.skill-img img{
+    width: 635px;
+}
+
+.setion-title{
+    font-family:'DM Serif Display' ;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: .22px;
+    color: #292F36;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.section-parag{
+    font-family: "Jost",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: .22px;
+    color: #4D5053;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.section-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-link span{
+    padding: 30px;
+    background-color: #F4F0EC;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.section-link p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: .22px;
+    color: #4D5053;
+}
+
+button{
+    padding: 21px 17px 23px 34px !important
+}
+
+@media only screen and (max-width: 1300px) {
+    .skill-img img{
+        width: 550px;
+        height: 600px !important;
+    }
+
+    .section-parag {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1056px) {
+    .setion-title{
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: .22px;
+    }
+}
 
 @media only screen and (max-width: 996px) {
     .services-item h3{
         font-size: 22px;
         line-height: 30px;
-
+        
     }
 
+    .setion-title{
+        font-size: 38px;
+        line-height: 50px;
+        letter-spacing: .22px;
+    }
+
+    .section-parag{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    .skill-img img{
+        width: 450px;
+        /* height: 600px !important; */
+        object-fit: contain;
+    }
+
+
+    
     .services-item p{
         font-size: 18px;
         line-height: 25px;
@@ -271,20 +368,30 @@ button:hover{
     .nav-item a{
         font-size: 17px;
     }
-
+    
     .active{
         font-size: 18px !important;
     }
+    
+}
 
+@media only screen and (max-width:850px) {
+    .skill-items{
+        flex-direction: column;
+    }
+
+    .skill-img{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 805px) {
     .services-item h3{
         font-size: 20px;
         line-height: 25px;
-
+        
     }
-
+    
     .services-item p{
         font-size: 16px;
         line-height: 20px;
@@ -298,17 +405,17 @@ button:hover{
     .hire{
         top: 50px;
     }
-
+    
     .hire .hire-description{
         margin-top: 150px;
         margin-bottom: 360px;
     }
-
+    
     .hire-title{
         font-size: 50px;
         line-height:60px ;
     }
-
+    
     .hire-word{
         width:70%;
     }
@@ -321,12 +428,12 @@ button:hover{
     .button p{
         font-size: 14px;
     }
-
+    
     .services-items{
         flex-direction: column;
         align-items: center;
     }
-
+    
     .services-item{
         width: 50%;
     }
@@ -340,6 +447,10 @@ button:hover{
         font-size: 22px;
         line-height: 33px;
     }
+
+    .skill{
+        top: 1800px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -348,26 +459,52 @@ button:hover{
         font-size: 40px;
         line-height:50px ;
     }
-
+    
     .hire-word{
-       width: 90%;
+        width: 90%;
     }
-
+    
     .hire-word{
         font-size: 18px;
         line-height:20px; 
     }
-
+    
     button{
         margin-top:40px !important;
     }
-
+    
     .button p{
         font-size: 14px;
         line-height: 20px;
     }
-
+    
     .services-item{
         width: 80%;
+    }
+
+    .setion-title{
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: .22px;
+    }
+
+    .section-parag{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .section-link span{
+        padding: 20px;
+        border-radius: 50%;
+    }
+    
+    .section-link p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .skill-items button{
+        width: 100%;
     }
 }
