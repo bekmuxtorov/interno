@@ -172,6 +172,9 @@ button:hover{
     cursor: pointer;
 }
 
+button i{
+    color: gold;
+}
 /* services section */
 .services{
     position:absolute ;
@@ -257,7 +260,7 @@ button:hover{
     width: 635px;
 }
 
-.setion-title{
+.section-title{
     font-family:'DM Serif Display' ;
     font-size: 50px;
     line-height: 65px;
@@ -303,6 +306,96 @@ button{
     padding: 21px 17px 23px 34px !important
 }
 
+/* about section */
+.about{
+    position: absolute;
+    top: 2200px;
+    text-align: center;
+}
+
+.about-area{
+    background-color:#F4F0EC;
+    padding-top: 3.125rem;
+    padding-bottom: 7.5rem;
+    padding-left: 3.125rem;
+    padding-right: 4.375rem;
+    border-radius: 4.375rem;
+    margin-top: 8.75rem;
+}
+
+.about-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-item{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 2.5rem 2.1875rem;
+    transition: all 0.5s;
+}
+
+.about-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 9px 6px 0px #ccc ;
+}
+
+.about-item:not(:last-child){
+    margin-right: 1.25rem;
+}
+
+.acc{
+    display: flex;
+    align-items: center;
+}
+
+.acc-img{
+    width: 4.8125rem;
+    height: 4.8125rem;
+}
+
+.acc-word{
+    padding-left: 1.25rem;
+}
+
+.acc-name{
+    white-space: nowrap;
+    padding-top: 1.25rem;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 37.5px;
+    letter-spacing: 0.22px;
+    font-family: "DM Serif Display", Display;
+    color: #292F36;
+    margin: 0;
+    /* padding-bottom: 20px; */
+}
+
+.acc-location{
+    font-family: "Jost",sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: .22px;
+    margin: 0;
+    padding-left: -22px;
+}
+
+.about-description{
+    font-family: "Jost",sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    letter-spacing: .22px;
+    color: #4D5053;
+    padding-top: 10px;
+    text-align: left;
+}
+
+
 @media only screen and (max-width: 1300px) {
     .skill-img img{
         width: 550px;
@@ -315,8 +408,19 @@ button{
     }
 }
 
+@media only screen and (max-width: 1152px) {
+    .acc-name{
+        font-size:1.4rem ;
+    }
+
+    .about-item{
+        width: ;
+    }
+
+}
+
 @media only screen and (max-width: 1056px) {
-    .setion-title{
+    .section-title{
         font-size: 40px;
         line-height: 55px;
         letter-spacing: .22px;
@@ -330,7 +434,7 @@ button{
         
     }
 
-    .setion-title{
+    .section-title{
         font-size: 38px;
         line-height: 50px;
         letter-spacing: .22px;
@@ -353,6 +457,23 @@ button{
     .services-item p{
         font-size: 18px;
         line-height: 25px;
+    }
+
+    .about-items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-item:not(:last-child) {
+        margin-right: 0;
+    }
+    .about-item{
+        width: 80% !important;
+        margin-bottom: 25px;
+    }
+    
+    .acc-name{
+        padding: 0;
     }
 }
 
@@ -382,6 +503,10 @@ button{
 
     .skill-img{
         display: none;
+    }
+
+    .about-area{
+        margin-top: 0;
     }
 }
 
@@ -451,6 +576,10 @@ button{
     .skill{
         top: 1800px;
     }
+
+    .about{
+        top: 2523px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -482,7 +611,7 @@ button{
         width: 80%;
     }
 
-    .setion-title{
+    .section-title{
         font-size: 30px;
         line-height: 40px;
         letter-spacing: .22px;
