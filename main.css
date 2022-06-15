@@ -561,8 +561,6 @@ projects section
         object-fit: contain;
     }
     
-    
-    
     .services-item p{
         font-size: 18px;
         line-height: 25px;
@@ -599,6 +597,9 @@ projects section
         text-align: center;
     }
 
+    .projects{
+        top: 3890px;
+    }
     
 }
 
@@ -629,6 +630,10 @@ projects section
     }
     .portnior-item:not(:last-child){
         margin-bottom: 40px;
+    }
+
+    .projects{
+        top: 4220px;
     }
 }
 
@@ -718,7 +723,23 @@ projects section
     }
 
     .portnior{
-        top:3744px;
+        display: none;
+    }
+
+    .projects{
+        top: 3952px;
+    }
+
+    .projects-img img{
+        width: 500px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .projects-img img{
+        width: 450px;
+        height:550px ;
     }
 }
 
@@ -777,7 +798,9 @@ projects section
         width: 100%;
     }
 
-    .portnior{
-        top:3780px;
+    .projects-img img{
+        width: 400px;
+        height:500px ;
     }
 }
+
