@@ -395,13 +395,122 @@ button{
     text-align: left;
 }
 
+/*
+================================================
+portnoir section
+================================================
+*/
+
+.portnior{
+    position: absolute;
+    top: 3100px;
+    width: 100%;
+}
+
+.portnior-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 170px;
+    padding-bottom: 154px;
+}
+
+.portnior-item{
+    list-style: none;
+}
+
+.portnior-item a{
+    color: #292F36;
+    text-decoration: none;
+}
+
+
+
+/*
+================================================
+projects section
+================================================
+*/
+.projects{
+    position: absolute;
+    top: 3500px;
+    width: 100% ;
+}
+
+.project-word{
+    text-align: center;
+}
+
+.project-word h4{
+    margin: 0;
+}
+
+.projects-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-top: 50px;
+
+}
+
+.project-item{
+    margin-bottom: 60px;
+}
+
+.projects-img{
+    overflow: hidden;
+    border-top-right-radius: 80px;
+}
+
+.projects-img img{
+    transition: all 0.5s;
+
+}
+
+.projects-img img:hover{
+    transform: scale(1.05);
+}
+.project-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+.project-description-word h4{
+    margin: 0;
+    font-size: 24px;
+    line-height: 37.5px;
+    letter-spacing: .22px;
+    font-family: "DM Serif Display";
+    color: #292F36;
+    font-weight: 400;
+}
+
+.project-description-word p{
+    margin: 0;
+    padding: 0;
+}
+
+.project-description-icon i{
+    padding: 20px;
+    background-color:#F4F0EC;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.project-description-icon i:hover{
+    background-color: #a07756;
+    color: #F4F0EC;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1300px) {
     .skill-img img{
         width: 550px;
         height: 600px !important;
     }
-
+    
     .section-parag {
         padding: 0;
         margin: 0;
@@ -412,11 +521,11 @@ button{
     .acc-name{
         font-size:1.4rem ;
     }
-
+    
     .about-item{
         width: ;
     }
-
+    
 }
 
 @media only screen and (max-width: 1056px) {
@@ -433,37 +542,37 @@ button{
         line-height: 30px;
         
     }
-
+    
     .section-title{
         font-size: 38px;
         line-height: 50px;
         letter-spacing: .22px;
     }
-
+    
     .section-parag{
         font-size: 20px;
         font-weight: 400;
         line-height: 29px;
     }
-
+    
     .skill-img img{
         width: 450px;
         /* height: 600px !important; */
         object-fit: contain;
     }
-
-
+    
+    
     
     .services-item p{
         font-size: 18px;
         line-height: 25px;
     }
-
+    
     .about-items{
         flex-direction: column;
         align-items: center;
     }
-
+    
     .about-item:not(:last-child) {
         margin-right: 0;
     }
@@ -475,6 +584,22 @@ button{
     .acc-name{
         padding: 0;
     }
+
+    .portnior{
+        top: 3500px;
+    }
+
+    .portnior-items{
+        display: flex;
+    }
+    .portnior-item{
+        width: 20%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    
 }
 
 
@@ -493,18 +618,29 @@ button{
     .active{
         font-size: 18px !important;
     }
+
+    .portnior-items{
+        flex-direction: column;
+        text-align: center;
+    }
     
+    .portnior-item{
+        width: 100%;
+    }
+    .portnior-item:not(:last-child){
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width:850px) {
     .skill-items{
         flex-direction: column;
     }
-
+    
     .skill-img{
         display: none;
     }
-
+    
     .about-area{
         margin-top: 0;
     }
@@ -572,13 +708,17 @@ button{
         font-size: 22px;
         line-height: 33px;
     }
-
+    
     .skill{
         top: 1800px;
     }
-
+    
     .about{
         top: 2523px;
+    }
+
+    .portnior{
+        top:3744px;
     }
 }
 
@@ -610,19 +750,19 @@ button{
     .services-item{
         width: 80%;
     }
-
+    
     .section-title{
         font-size: 30px;
         line-height: 40px;
         letter-spacing: .22px;
     }
-
+    
     .section-parag{
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
     }
-
+    
     .section-link span{
         padding: 20px;
         border-radius: 50%;
@@ -632,8 +772,12 @@ button{
         font-size: 20px;
         line-height: 30px;
     }
-
+    
     .skill-items button{
         width: 100%;
+    }
+
+    .portnior{
+        top:3780px;
     }
 }
