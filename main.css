@@ -22,7 +22,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
 }
 
 .header-logo a{
@@ -504,7 +503,161 @@ projects section
     cursor: pointer;
 }
 
+/* 
+================================================
+statistic section
+================================================
+*/
+.statistic{
+    position: absolute;
+    width: 100%;
+    top: 5500px;
+    background-color:#F4F0EC;
+}
 
+.statistic-items{
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    width: 100%;
+}
+
+.statistic-item{
+    padding-left: 56px;
+    padding-right: 56px;
+    text-align: center;
+}
+
+.statistic-item:not(:last-child){
+    border-right: 1px solid #CDA274; 
+
+}
+
+.statistic-number{
+    font-size: 85px;
+    line-height: 127.5px;
+    letter-spacing: 1.7px;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    margin: 0;
+    color: #CDA274;
+}
+
+.statistic-item h5{
+    margin: 0 ;
+    padding: 0;
+    padding-top: 10px;
+}
+
+/* 
+================================================
+blog section
+================================================
+*/
+.blog{
+    position: absolute;
+    top: 6000px;
+    width: 100%;
+}
+
+.blog-word {
+    text-align: center;
+}
+
+.blog-word h4{
+    margin-bottom: 21px;
+}
+
+.blog-word .section-parag{
+    margin: 0;
+}
+.blog-items{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.blog-img{
+    overflow: hidden;
+    border-radius: 45px 45px 0 0;
+}
+
+.blog-img img{
+    width: 345px;
+    height: 296px;
+}
+
+.blog-description{
+    text-align: left;
+    padding: 0 21px;
+}
+.blog-item {
+    width: 387px;
+    list-style: none;
+    border: 1px solid #e7e7e7;
+    padding: 0;
+    padding-top: 21px;
+    border-radius: 62px;
+    padding-bottom: 41px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.blog-item:hover{
+    border-color: #a07756;
+}
+
+.blog-item h6{
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    color:#292F36;
+    padding-top: 15px;
+
+}
+
+
+
+.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.data i{
+    height: 52px !important;
+    width: 52px !important;
+    padding: 10px !important;
+}
+
+.data span{
+    font-family: "Jons";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #4D5053;
+}
+
+
+
+
+@media only screen and (max-width: 1404px) {
+    .statistic {
+        top: 7036px;
+    }
+}
 @media only screen and (max-width: 1300px) {
     .skill-img img{
         width: 550px;
@@ -521,11 +674,6 @@ projects section
     .acc-name{
         font-size:1.4rem ;
     }
-    
-    .about-item{
-        width: ;
-    }
-    
 }
 
 @media only screen and (max-width: 1056px) {
@@ -600,7 +748,21 @@ projects section
     .projects{
         top: 3890px;
     }
+
+    .statistic {
+        top: 7291px;
+        width: 100%;
+    }
     
+    .statistic-items{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+    }
+
+    .statistic-number {
+        font-size: 70px;
+    }
 }
 
 
@@ -635,6 +797,25 @@ projects section
     .projects{
         top: 4220px;
     }
+
+    .statistic {
+        top: 7637px;
+    }
+
+    .statistic-items {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+
+    .statistic-number {
+        font-size:60px ;
+    }
+
+    .statistic-item {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media only screen and (max-width:850px) {
@@ -661,6 +842,13 @@ projects section
     .services-item p{
         font-size: 16px;
         line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 729px) {
+    .statistic-item{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -734,6 +922,23 @@ projects section
         width: 500px;
         height: 600px;
     }
+
+    .statistic{
+        top: 7177px;
+    }
+    
+    .statistic-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .statistic-item{
+        margin-top: 20px;
+    }
+
+    .services-item h5{
+        padding-top: -10px !important;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -741,6 +946,11 @@ projects section
         width: 450px;
         height:550px ;
     }
+
+    .statistic {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {

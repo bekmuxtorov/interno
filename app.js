@@ -12,6 +12,21 @@ function menu() {
     }
 }
 
+const blogItems = document.querySelectorAll(".blog-item");
+
+function  joylash() {
+    for(let i = 0; i <= blogItems.length; i++) {
+        if((i+1)%3 != 0){
+            blogItems[i].style.margin = "0 20px 0 0"
+        }
+    }
+}
+// joylash()
+
+
+
+
+
 
     
 
