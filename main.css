@@ -302,7 +302,7 @@ button i{
 }
 
 button{
-    padding: 21px 17px 23px 34px !important
+    padding: 21px 17px 21px 17px !important
 }
 
 /* about section */
@@ -550,11 +550,13 @@ statistic section
     padding-top: 10px;
 }
 
+
 /* 
 ================================================
 blog section
 ================================================
 */
+
 .blog{
     position: absolute;
     top: 6000px;
@@ -651,11 +653,72 @@ blog section
 }
 
 
+/* 
+================================================
+connect
+================================================
+*/
+
+.connect{
+    position: absolute;
+    width: 100%;
+    top: 7350px;
+    padding-top: 141px;
+}
+
+.connect-area{
+    padding-top: 100px;
+    text-align: center;
+    background-color: #292F36;
+    border-radius: 70px;
+    padding-bottom: 95px;
+}
+
+.connect-area .section-title{
+    font-size: 50px !important;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+}
+
+.connect-area .section-parag{
+    margin: 0 !important;
+    padding-top: 10px !important;
+    color: #fff;
+
+}
+
+.connect-area button{
+    background-color: #CDA274;  
+    margin-top: 31px;
+   
+}
+
+.connect-area button:hover{
+    background-color: #a07756;
+
+}
 
 
+
+
+@media only screen and (max-width: 1460px) {
+    .connect {
+        top: 7900px;
+    }
+
+}
 @media only screen and (max-width: 1404px) {
     .statistic {
         top: 7036px;
+    }
+
+    .blog{
+        top: 7552px;
+    }
+
+    .connect{
+        top: 9492px;
     }
 }
 @media only screen and (max-width: 1300px) {
@@ -762,6 +825,10 @@ blog section
 
     .statistic-number {
         font-size: 70px;
+    }
+
+    .blog {
+        top: 7730px;
     }
 }
 
