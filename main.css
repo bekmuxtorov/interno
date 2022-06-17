@@ -123,7 +123,7 @@ header{
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 80px;
+    top: 69px;
     width: 100%;
     /* height: calc(100vh - 80px);   */
     border-bottom-left-radius: 250px;
@@ -449,7 +449,7 @@ projects section
     flex-wrap: wrap;
     justify-content:space-evenly;
     padding-top: 50px;
-
+    
 }
 
 .project-item{
@@ -463,7 +463,7 @@ projects section
 
 .projects-img img{
     transition: all 0.5s;
-
+    
 }
 
 .projects-img img:hover{
@@ -531,7 +531,7 @@ statistic section
 
 .statistic-item:not(:last-child){
     border-right: 1px solid #CDA274; 
-
+    
 }
 
 .statistic-number{
@@ -580,8 +580,8 @@ blog section
     padding: 0;
     text-align: center;
     justify-content: center;
-
-
+    
+    
 }
 
 .blog-img{
@@ -626,7 +626,7 @@ blog section
     padding: 0;
     color:#292F36;
     padding-top: 15px;
-
+    
 }
 
 
@@ -685,38 +685,131 @@ connect
     margin: 0 !important;
     padding-top: 10px !important;
     color: #fff;
-
+    
 }
 
 .connect-area button{
     background-color: #CDA274;  
     margin-top: 31px;
-   
+    
 }
 
 .connect-area button:hover{
     background-color: #a07756;
-
+    
 }
 
 
+/* 
+================================================
+footer
+================================================
+*/
 
+.footer{
+    position: absolute;
+    width: 100%;
+    top: 8000px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.footer-item{
+    width: 30%;
+}
+.footer-item img{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #4D5053; 
+}
+
+
+.social-media{
+    margin-top: 30px;
+}
+.footer i:not(:last-child){
+    margin-right:40px ;
+    transition: all 0.5s;
+}
+.footer i:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+.footer-title{
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    line-height: 37.5px;
+    font-size: 25px;
+    color: #292F36;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer-title:not(:last-child){
+    padding-left: 50px;
+}
+
+
+.footer-item .section-parag{
+    padding: 0;
+}
+
+.footer-item ul{
+    padding: 0 0 0 50px;
+}
+.footer-item li{
+    list-style: none;
+    margin: 0 0 25px 0;
+    transition: all 0.5s;
+}
+
+.footer-item a:hover{
+    color: #CDA274;
+}
+
+.footer-item a:focus {
+    color: #a07756;
+}
+
+.footer-word{
+    text-align: center;
+    border-top: 1px solid #CDA274;
+}
+
+.footer-word .section-parag{
+    padding: 0;
+}
+
+.footer-word span{
+    color: #CDA274;
+}
 
 @media only screen and (max-width: 1460px) {
     .connect {
         top: 7900px;
     }
-
+    
 }
 @media only screen and (max-width: 1404px) {
     .statistic {
         top: 7036px;
     }
-
+    
     .blog{
         top: 7552px;
     }
-
+    
     .connect{
         top: 9492px;
     }
@@ -793,11 +886,11 @@ connect
     .acc-name{
         padding: 0;
     }
-
+    
     .portnior{
         top: 3500px;
     }
-
+    
     .portnior-items{
         display: flex;
     }
@@ -807,11 +900,11 @@ connect
         margin-right: 5px;
         text-align: center;
     }
-
+    
     .projects{
         top: 3890px;
     }
-
+    
     .statistic {
         top: 7291px;
         width: 100%;
@@ -820,17 +913,19 @@ connect
     .statistic-items{
         padding-top: 80px;
         padding-bottom: 80px;
-
+        
     }
-
+    
     .statistic-number {
         font-size: 70px;
     }
-
+    
     .blog {
         top: 7730px;
     }
 }
+
+
 
 
 @media only screen and (max-width:900px) {
@@ -848,7 +943,7 @@ connect
     .active{
         font-size: 18px !important;
     }
-
+    
     .portnior-items{
         flex-direction: column;
         text-align: center;
@@ -860,28 +955,36 @@ connect
     .portnior-item:not(:last-child){
         margin-bottom: 40px;
     }
-
+    
     .projects{
         top: 4220px;
     }
-
+    
     .statistic {
         top: 7637px;
     }
-
+    
     .statistic-items {
         padding-top: 60px;
         padding-bottom: 60px;
-
+        
     }
-
+    
     .statistic-number {
         font-size:60px ;
     }
-
+    
     .statistic-item {
         padding-left: 50px;
         padding-right: 50px;
+    }
+    
+    .footer{
+        display: none;
+    }
+    
+    .connect{
+        display: none;
     }
 }
 
@@ -976,20 +1079,20 @@ connect
     .about{
         top: 2523px;
     }
-
+    
     .portnior{
         display: none;
     }
-
+    
     .projects{
         top: 3952px;
     }
-
+    
     .projects-img img{
         width: 500px;
         height: 600px;
     }
-
+    
     .statistic{
         top: 7177px;
     }
@@ -998,11 +1101,11 @@ connect
         display: flex;
         flex-direction: column;
     }
-
+    
     .statistic-item{
         margin-top: 20px;
     }
-
+    
     .services-item h5{
         padding-top: -10px !important;
     }
@@ -1013,11 +1116,11 @@ connect
         width: 450px;
         height:550px ;
     }
-
+    
     .statistic {
         display: none;
     }
-
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -1074,7 +1177,7 @@ connect
     .skill-items button{
         width: 100%;
     }
-
+    
     .projects-img img{
         width: 400px;
         height:500px ;
